@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/payroll</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">123</property>
+    <mapping class="com.sumaga.hibe.model.Adtype"/>
+    <mapping class="com.sumaga.hibe.model.Advance"/>
+    <mapping class="com.sumaga.hibe.model.AllowanceDeduction"/>
+    <mapping class="com.sumaga.hibe.model.Attendance"/>
+    <mapping class="com.sumaga.hibe.model.Bank"/>
+    <mapping class="com.sumaga.hibe.model.BankAccounts"/>
+    <mapping class="com.sumaga.hibe.model.Cheque"/>
+    <mapping class="com.sumaga.hibe.model.Department"/>
+    <mapping class="com.sumaga.hibe.model.Designation"/>
+    <mapping class="com.sumaga.hibe.model.Employee"/>
+    <mapping class="com.sumaga.hibe.model.EmployeeType"/>
+    <mapping class="com.sumaga.hibe.model.Fpfiles"/>
+    <mapping class="com.sumaga.hibe.model.HollyDay"/>
+    <mapping class="com.sumaga.hibe.model.Leaves"/>
+    <mapping class="com.sumaga.hibe.model.Loan"/>
+    <mapping class="com.sumaga.hibe.model.PaymentType"/>
+    <mapping class="com.sumaga.hibe.model.PayrollDefault"/>
+    <mapping class="com.sumaga.hibe.model.Priviledge"/>
+    <mapping class="com.sumaga.hibe.model.PrivilegeItem"/>
+    <mapping class="com.sumaga.hibe.model.Salary"/>
+    <mapping class="com.sumaga.hibe.model.SalaryAttendance"/>
+    <mapping class="com.sumaga.hibe.model.SalaryPayment"/>
+    <mapping class="com.sumaga.hibe.model.SysUser"/>
+    <mapping class="com.sumaga.hibe.model.UserGroup"/>
+    <mapping class="com.sumaga.hibe.model.UserGroupPriviledge"/>
+    <mapping class="com.sumaga.hibe.model.UserGroupPrivilegeItem"/>
+    <mapping class="com.sumaga.hibe.model.WorkingDays"/>
+  </session-factory>
+</hibernate-configuration>
