@@ -58,6 +58,7 @@ public class ImageUploader extends HttpServlet {
 
                     List<FileItem> fi = upload.parseRequest(request);
                     String path2 = "";
+                    String path3 = "";
                     int eid = 0;
                     for (FileItem itm : fi) {
 
@@ -86,6 +87,7 @@ public class ImageUploader extends HttpServlet {
                              String path = "C:/fpdata";
 
                              path2 =  path+"/" + sctm + "_" + name;
+                             path3 = sctm + "_" + name;
                             File theDir = new File(path);
 
 //                                End
@@ -124,7 +126,7 @@ public class ImageUploader extends HttpServlet {
                     System.out.println("EMPLOYEE ID: " + eid);
                     System.out.println("LINK : " + path2);
 
-                    result = new EmployeeDAOImpl().SetImage(eid, "/Payroll"+path2);
+                    result = new EmployeeDAOImpl().SetImage(eid, path3);
                     if (result.equals(VertecConstants.SUCCESS)) {
                         result2 = new AttendanceDAOImpl().UpdateAttendance(user1);
                     } else {
