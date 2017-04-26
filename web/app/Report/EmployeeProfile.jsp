@@ -61,8 +61,8 @@
                         <h4>
                             <div class="table-responsive">
                                 <center>
-                                    <img src="<%=path%>" width="200" height="200"/>
-
+                                    <!--<img src="<%=path%>" width="200" height="200"/>-->
+                                    <img src="${pageContext.request.contextPath}/image/<%=path%>" width="200" height="200" />
 
                                     <table class="table" style=" width: 500px;">
                                         <tbody>

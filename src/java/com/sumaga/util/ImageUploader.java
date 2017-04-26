@@ -82,8 +82,8 @@ public class ImageUploader extends HttpServlet {
                             
                                  
 //                            start
-                             String path = "/images";
-//                             String path = "C:/fpdata";
+//                             String path = "/images";
+                             String path = "C:/fpdata";
 
                              path2 =  path+"/" + sctm + "_" + name;
                             File theDir = new File(path);
@@ -108,8 +108,8 @@ public class ImageUploader extends HttpServlet {
                             } else {
                                 System.out.println("FILE NOT EXIST>>>>>>>");
                             }
-//                            File fff = new File(path2);
-                            File fff = new File(request.getServletContext().getRealPath(path2));
+                            File fff = new File(path2);
+//                            File fff = new File(request.getServletContext().getRealPath(path2));
                             itm.write(fff);
 
                         } else if (itm.getFieldName().equals("employee")) {
